@@ -1,0 +1,9 @@
+{
+  "extends": "@0xpass/tsconfig/base.json",
+
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+
+  "include": ["src/**/*"]
+}
