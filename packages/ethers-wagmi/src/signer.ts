@@ -18,7 +18,7 @@ export function walletClientToSigner(walletClient: WalletClient) {
 
 
 /** Action to convert a viem Wallet Client to an ethers.js Signer. */
-export async function getEthersSigner({
+export async function getSignerFromWagmi({
                                           chainId,
                                       }: { chainId?: number } = {}): Promise<providers.JsonRpcSigner | undefined> {
     const walletClient = await getWalletClient({ chainId });

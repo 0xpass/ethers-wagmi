@@ -1,0 +1,41 @@
+{
+  "name": "@0xpass/ethers-wagmi-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "pnpm run clean && pnpm run compile",
+    "clean": "rimraf ./dist",
+    "compile": "rollup --config rollup.config.js",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@0xpass/ethers-wagmi": "workspace:*",
+    "@types/react": "^18.2.18",
+    "ethers": "5.7.2",
+    "react": "18.2.0",
+    "wagmi": "^1.3.8"
+  },
+  "devDependencies": {
+    "@0xpass/tsconfig": "workspace:*",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@swc/core": "^1.3.36",
+    "rimraf": "~5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
