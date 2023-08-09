@@ -1,1 +1,1 @@
-export {useEthersSigner} from "./user-ethers-signer";
+export {useEthersSigner} from "./signer";

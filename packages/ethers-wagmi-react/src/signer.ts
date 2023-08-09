@@ -1,5 +1,5 @@
 import {useWalletClient} from "wagmi";
-import {walletClientToSigner} from "@0xpass/ethers-wagmi/src";
+import {walletClientToSigner} from "@0xpass/ethers-wagmi";
 import {useMemo} from "react";
 import { providers } from "ethers";
 
